@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="./snakeGame.css">
+  </head>
+  <body id="game">
+
+    <div class="points">Points: 0</div>
+    <div class="game-container group">
+      <strong class="game-over standby">Game Over</strong>
+      <button class="retry-button standby">Play Again?</button>
+      <figure class="grid"></figure>
+    </div>
+
+
+
+  </body>
+
+
+  <script src="./jquery-2.1.1.js"></script>
+  <script src="./snake.js"></script>
+  <script src="./board.js"></script>
+  <script src="./snake-view.js"></script>
+
+  <script>
+  $(document).on("ready", function(){
+    var $el = $("#game")
+
+    var View = new window.SnakeGame.View($el);
+
+  });
+  </script>
+</html>
