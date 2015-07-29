@@ -13,6 +13,9 @@ body, html, button {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
 
 /* utils */
 
@@ -90,7 +93,65 @@ div.points {
   color: blue;
 }
 
+.ready:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.ready {
+  width: 200px;
+  font-size: 60px;
+  position: absolute;
+  top: 170px;
+  left: 170px;
+  z-index: 1;
+  transition: left .75s;
+}
+
+.difficulty {
+  width: 350px;
+  font-size: 22px;
+  position: absolute;
+  top: 210px;
+  left: 45px;
+  z-index: 1;
+  transition: left .75s;
+}
+
+.difficulty > li {
+  float: left;
+  position: relative;
+  padding: 10px;
+  transition: top 1s;
+  top: 0;
+}
+
+.difficulty > li:hover {
+  cursor: pointer;
+  top: -10px;
+  color: red;
+}
+
+.instructions-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.instructions-container > h2 {
+  font-size: 24px;
+}
+
+.instructions-container > ol > li {
+  padding: 5px;
+}
+
 /* special */
+
+
+.selected {
+  top: -10px;
+  color: red;
+}
 
 .standby {
   left: 1200px;
@@ -110,4 +171,8 @@ div.points {
 
 .active {
   display: block
+}
+
+.inactive {
+  display: none;
 }
