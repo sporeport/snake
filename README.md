@@ -1,3 +1,3 @@
 # snake
 
-[live] http://sporeport.github.io/snake/
+[live]: http://sporeport.github.io/snake/
