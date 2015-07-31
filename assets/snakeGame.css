@@ -19,7 +19,7 @@ ul {
 
 /* utils */
 
-.group {
+.group:after {
   content: "";
   clear: both;
   display: block;
@@ -133,8 +133,21 @@ div.points {
 }
 
 .instructions-container {
-  width: 500px;
-  margin: 0 auto;
+  position: absolute;
+  width: 300px;
+  left: 50px;
+  top: 150px;
+}
+
+.transparent_bg {
+  position: absolute;
+  width: 310px;
+  height: 240px;
+  left: 45px;
+  top: 145px;
+  opacity: .25;
+  border-radius: 10px;
+  background-color: #000;
 }
 
 .instructions-container > h2 {
@@ -170,7 +183,7 @@ div.points {
 }
 
 .active {
-  display: block
+  display: block;
 }
 
 .inactive {
