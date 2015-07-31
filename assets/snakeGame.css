@@ -134,15 +134,15 @@ div.points {
 
 .instructions-container {
   position: absolute;
-  width: 300px;
+  width: 250px;
   left: 50px;
   top: 150px;
 }
 
 .transparent_bg {
   position: absolute;
-  width: 310px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
   left: 45px;
   top: 145px;
   opacity: .25;
