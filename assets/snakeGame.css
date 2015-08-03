@@ -116,9 +116,10 @@ div.points {
   font-size: 36px;
   position: absolute;
   top: 170px;
-  left: 570px;
+  left: 560px;
   z-index: 1;
   transition: left .75s;
+  padding: 10px;
 }
 
 .difficulty {
