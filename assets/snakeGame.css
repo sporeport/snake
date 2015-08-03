@@ -32,6 +32,7 @@ body {
   letter-spacing: 1px;
   color: #00ff00;
   background: #3a3a3a;
+  line-height: 125%;
 }
 
 .game-container {
@@ -69,7 +70,8 @@ div.points {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
-  left: 450px;
+  margin-top: 60px;
+  left: 460px;
   top: 20px;
 }
 
@@ -81,6 +83,7 @@ div.points {
   top: 90px;
   left: 490px;
   z-index: 1;
+  color: #fff;
   transition: left .75s;
 }
 
@@ -93,6 +96,7 @@ div.points {
   left: 520px;
   z-index: 1;
   outline: none;
+  color: #fff;
 
   transition: left .75s;
 }
@@ -112,7 +116,7 @@ div.points {
   font-size: 36px;
   position: absolute;
   top: 170px;
-  left: 555px;
+  left: 570px;
   z-index: 1;
   transition: left .75s;
 }
@@ -122,7 +126,7 @@ div.points {
   font-size: 14px;
   position: absolute;
   top: 210px;
-  left: 380px;
+  left: 395px;
   z-index: 1;
   transition: left .75s;
 }
