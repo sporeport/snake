@@ -28,21 +28,23 @@ ul {
 /* styles */
 
 body {
-  font-family: sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+  color: #00ff00;
+  background: #3a3a3a;
 }
 
 .game-container {
   position: relative;
-  width: 502px;
-  margin: 30px auto;
+  width: 1000px;
 }
 
 figure.grid {
+  float: left;
   height: 500px;
   width: 500px;
-  background: #7ED87E;
-  box-shadow: 5px 5px 4px 1px #3E693E;
-  border: 1px solid #5D9A5D;
+  background: #000;
+  border-radius: 10px;
 }
 
 section.cell {
@@ -52,7 +54,9 @@ section.cell {
 }
 
 section.snake {
-  background: blue;
+  background: #00ff00;
+  /*box-shadow: inset 0px 0px 5px 2px #5e5e5e;*/
+  border-radius: 5px;
 }
 
 section.apple {
@@ -61,27 +65,32 @@ section.apple {
 }
 
 div.points {
-  text-align: center;
-  font-size: 42px;
+  position: relative;
+  font-size: 36px;
   font-weight: 700;
+  margin-bottom: 50px;
+  left: 450px;
+  top: 20px;
 }
 
 .game-over {
-  width: 330px;
+  width: 350px;
   display: none;
-  font-size: 60px;
+  font-size: 36px;
   position: absolute;
   top: 90px;
+  left: 490px;
   z-index: 1;
   transition: left .75s;
 }
 
 .retry-button {
   display: none;
-  width: 140px;
-  font-size: 24px;
+  width: 200px;
+  font-size: 16px;
   position: absolute;
   top: 160px;
+  left: 520px;
   z-index: 1;
   outline: none;
 
@@ -100,20 +109,20 @@ div.points {
 
 .ready {
   width: 200px;
-  font-size: 60px;
+  font-size: 36px;
   position: absolute;
   top: 170px;
-  left: 170px;
+  left: 555px;
   z-index: 1;
   transition: left .75s;
 }
 
 .difficulty {
-  width: 350px;
-  font-size: 22px;
+  width: 450px;
+  font-size: 14px;
   position: absolute;
   top: 210px;
-  left: 45px;
+  left: 380px;
   z-index: 1;
   transition: left .75s;
 }
@@ -133,21 +142,10 @@ div.points {
 }
 
 .instructions-container {
-  position: absolute;
-  width: 250px;
-  left: 50px;
-  top: 150px;
-}
-
-.transparent_bg {
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  left: 45px;
-  top: 145px;
-  opacity: .25;
-  border-radius: 10px;
-  background-color: #000;
+  float: left;
+  width: 320px;
+  margin-right: 50px;
+  padding: 20px;
 }
 
 .instructions-container > h2 {
@@ -171,15 +169,15 @@ div.points {
 }
 
 .game-over-in-place {
-  left: 100px;
+  left: 490px;
 }
 
 .retry-button-in-place {
-  left: 190px;
+  left: 555px;
 }
 
 .leave {
-  left: -800px;
+  left: -400px;
 }
 
 .active {
